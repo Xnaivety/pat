@@ -1,7 +1,6 @@
 #include <iostream>
 #include <algorithm>
 using namespace std;
-该题求两个固定顶点之间的最短路径，因此该题基于Dijkstra算法，详细见算法p241
 int n, m, c1, c2;//n为城市的数量，m为路径数量，c1是出发地，c2是目的地
 int e[510][510], weight[510], dis[510], num[510], w[510];//e为邻接矩阵，记录任意两个城市之间的距离，weight数组是每个城市搜救队伍的数量，dis数组为出发点到该点的最短距离，num数组为出发点到该点最短路径的条数，w数组为出发点到该点最短路径下的最多救援队个数
 bool visit[510];//该数组未经过初始化？？？可能是默认true//vist数组表示是否被选入最短路径
